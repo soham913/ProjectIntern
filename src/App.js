@@ -1,4 +1,4 @@
-import React,{Component,useEffect,useMemo,useState} from 'react'
+import React,{useMemo,useState} from 'react'
 import Chart from "react-apexcharts";
 import { Layout, Menu,Button, Tag } from 'antd';
 import './App.css';
@@ -11,7 +11,7 @@ import moment from 'moment';
 import { Card } from 'antd';
 import {  Dropdown } from 'antd';
 import { Progress } from 'antd';
-import { DownOutlined,LeftOutlined,RightOutlined,AppstoreOutlined,BulbOutlined } from '@ant-design/icons';
+import { DownOutlined,LeftOutlined,RightOutlined,BulbOutlined } from '@ant-design/icons';
 import { Space,Breadcrumb } from 'antd';
 import { RocketOutlined,HomeOutlined, EllipsisOutlined,SettingOutlined,DashOutlined,PieChartOutlined,SnippetsOutlined,HeatMapOutlined, CopyOutlined, LineChartOutlined, FontSizeOutlined ,LeftSquareOutlined,ArrowUpOutlined,MenuFoldOutlined,MenuUnfoldOutlined,DatabaseOutlined, ImportOutlined, BlockOutlined, BookOutlined,InfoCircleOutlined, ExpandOutlined, CalculatorOutlined,CalendarOutlined,FormOutlined, WindowsOutlined } from '@ant-design/icons';
 const { Header, Footer, Sider, Content } = Layout;
@@ -430,7 +430,7 @@ function App() {
                   options={datafirst.options}
                   series={datafirst.series}
                   type="line"
-                  width="500"
+                  width="100%"
                   height="200"
             
             />
@@ -448,7 +448,7 @@ function App() {
                   options={datasecond.options}
                   series={datasecond.series}
                   type="donut"
-                  width="500"
+                  width="100%"
                   height="200"
             />
               </div>
