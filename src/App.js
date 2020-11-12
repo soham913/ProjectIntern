@@ -430,7 +430,7 @@ function App() {
                   options={datafirst.options}
                   series={datafirst.series}
                   type="line"
-                  width="auto"
+                  width="450"
                   height="200"
             
             />
@@ -448,7 +448,7 @@ function App() {
                   options={datasecond.options}
                   series={datasecond.series}
                   type="donut"
-                  width="auto"
+                  width="450"
                   height="200"
             />
               </div>
@@ -461,7 +461,7 @@ function App() {
                   options={datathird.options}
                   series={datathird.series}
                   type="area"
-                  width="auto"
+                  width="450"
                   height="200"
             />
               </Card>
